@@ -1,0 +1,14 @@
+body {
+  background-color: #f0f8ff;
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  color: navy;
+}
+
+figure {
+  border: 2px solid gray;
+  padding: 10px;
+  background-color: #fafafa;
+}
