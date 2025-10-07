@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 06 - CSS Selectors and Layout</title>
+  <link rel="stylesheet" href="stylespread.css">
+  <style>
+    /* Example of Contrast (dark vs. light), Repetition (consistent colors), Alignment (centered nav), Proximity (grouped sections) */
+
+    /* CLASS SELECTOR → applied to multiple elements */
+    .highlight {
+      background-color: #fffae6;
+      border-left: 4px solid #ffcc00;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    /* ID SELECTOR → applied to one unique section */
+    #main-article {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 750px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    header {
+      background-color: #003366;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      background-color: #004080;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 30px;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CSS Selectors & Page Design</h1>
+    <p>Using IDs, classes, and design principles</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exercise05.html">Exercise 05</a></li>
+      <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Unique ID applied here -->
+    <article id="main-article">
+      <h2>Learning to Use Classes and IDs</h2>
+      <p>
+        In this exercise, I added both an <strong>ID</strong> and a <strong>class</strong> to my HTML elements 
+        to show how they differ and how they help organize styles.
+      </p>
+
+      <!-- Class applied to emphasize a key idea -->
+      <p class="highlight">
+        <strong>IDs</strong> are unique — used for one element only, while <strong>classes</strong> can be reused across multiple elements.
+      </p>
+
+      <p>
+        The layout also follows the <abbr title="Contrast, Repetition, Alignment, Proximity">CRAP</abbr> design principles:
+      </p>
+      <ul>
+        <li><strong>Contrast:</strong> dark header and nav against light content area.</li>
+        <li><strong>Repetition:</strong> consistent color palette and spacing throughout the page.</li>
+        <li><strong>Alignment:</strong> centered navigation and article for easy reading.</li>
+        <li><strong>Proximity:</strong> related information grouped within sections for clarity.</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vincent DeMarco — Designed with accessibility and CRAP principles in mind.</p>
+  </footer>
+
+</body>
+</html>
