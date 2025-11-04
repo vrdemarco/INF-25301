@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Exercise 07 - Responsive Basics</title>
+
+  
+  <link rel="stylesheet" href="exercise07.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Responsive Page Demo</h1>
+    <p>Viewport, fluid images, and media queries</p>
+  </header>
+
+  <nav aria-label="Main navigation" class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exercise05.html">Exercise 05</a></li>
+      <li><a href="exercise06.html">Exercise 06</a></li>
+      <li><a href="exercise07.html" aria-current="page">Exercise 07</a></li>
+      <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <article id="main-article">
+      <h2>What We Changed</h2>
+      <ul>
+        <li>Added the <code>viewport</code> meta tag so mobile devices size correctly.</li>
+        <li>Made all images <em>fluid</em> so they scale to their container.</li>
+        <li>Used <em>media queries</em> to adapt layout, text sizes, and navigation on small screens.</li>
+      </ul>
+
+      <figure class="hero">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Apples_in_basket.jpg"
+          alt="Fresh red apples filling a basket"
+          width="1200" height="800">
+        <figcaption>Photo: Wikimedia Commons (CC BY-SA 4.0)</figcaption>
+      </figure>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Card One</h3>
+          <p>Content block to show how columns collapse to a single column on small screens.</p>
+        </div>
+        <div class="card">
+          <h3>Card Two</h3>
+          <p>Resize your browser to see the grid switch from 3 → 2 → 1 columns.</p>
+        </div>
+        <div class="card">
+          <h3>Card Three</h3>
+          <p>Spacing, readable line lengths, and good contrast remain consistent.</p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; 2025 Vincent DeMarco • Updated for Exercise 07</p>
+  </footer>
+
+
+
+</body>
+</html>
